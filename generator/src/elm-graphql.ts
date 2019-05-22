@@ -159,7 +159,7 @@ function verifyCustomCodecsFileIsValid(
   );
 
   try {
-    childProcess.execSync(`elm make ${verifyDecodersFile} --output=/dev/null`, {
+    childProcess.execSync(`npx elm make ${verifyDecodersFile} --output=/dev/null`, {
       stdio: "pipe"
     });
   } catch (error) {
